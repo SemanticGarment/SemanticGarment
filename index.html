@@ -60,10 +60,10 @@
         <div class="content has-text-justified" style="font-size: 1.25rem;"> <!-- 字体变大 -->
           <!-- SVG -->
           <div class="has-text-centered" style="margin-bottom: 1.5rem;">
-            <img src="./static/images/web_pipeline.svg" alt="Pipeline SVG" style="max-width: 100%; height: auto;">
+            <img src="./static/images/pipeline_v4.png" alt="Pipeline SVG" style="max-width: 100%; height: auto;">
           </div>
           <p>
-            Given a text or image prompt, our method leverages the semantic clothing model to categorize and initialize point clouds for different clothing types. We design an interpolated densification strategy to increase point density and initialize the garment Gaussians. Dual-modal pretrained 2D diffusion models are employed to refine geometric and texture details, resulting in the final 3D Gaussians. Semantic editing and self-occlusion optimization enhance the generated garments to better meet user requirements. This framework enables the efficient generation of high-fidelity, controllable, and body-structure-compliant garments within a short timeframe. 
+            We introduce a core 3D semantic clothing model to enhance controllability in clothing generation, editing, and optimization. (a) Given a text or image prompt, our proposed generation approach leverages the semantic clothing model and an interpolated densification strategy to initialize 3DGS for different clothing types, while leveraging bimodal pretrained 2D diffusion models to refine geometric and texture details. (b) Semantic-based editing can prune and densify the Gaussians according to user requirements, while applying SDS supervision to enhance details. (c) Self-occlusion optimization leverages semantic information to address the self-occlusion problem. 
           </p>
         </div>
       </div>
